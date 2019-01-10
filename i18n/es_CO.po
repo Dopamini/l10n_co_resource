@@ -1,0 +1,112 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_co_resource
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20181206\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 04:36+0000\n"
+"PO-Revision-Date: 2019-01-09 04:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_name
+msgid "Name Nodo"
+msgstr "Nombre Nodo"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_number_nodo
+msgid "Number Nodo"
+msgstr "Número Nodo"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_serial_number
+msgid "Serial Number"
+msgstr "Número de Serie"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_employee_id
+msgid "Installed to"
+msgstr "Instalado a"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_instalation_date
+msgid "Instalation Date"
+msgstr "Fecha Instalación"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_antenna_ids
+msgid "Antennas"
+msgstr "Antenas"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_name
+msgid "Name Antenna"
+msgstr "Nombre Antena"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_number_antenna
+msgid "Number Antenna"
+msgstr "Número Antena"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_serial_number
+msgid "Serial Number"
+msgstr "Número de Serie"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_nodo_ids
+msgid "Nodo"
+msgstr "Nodo"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_sale_date
+msgid "Sale Date"
+msgstr "Fecha Venta"
+
+#. module: l10n_co_resource
+#: selection:resource.antenna,state:0
+msgid "In Service"
+msgstr "En Servicio"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_state
+msgid "Out of Service"
+msgstr "Fuera de Servicio"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_instalation_date
+msgid "Instalation Date"
+msgstr "Fecha Instalación"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_amortization
+msgid "Amortization"
+msgstr "Amortización"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_days_of_use
+msgid "Days of Use"
+msgstr "Dias de uso"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_partner_id
+msgid "Assigned to"
+msgstr "Asignado a"
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_description
+msgid "Description"
+msgstr "Descripción"

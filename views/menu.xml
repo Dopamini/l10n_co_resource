@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<data noupdate="1">
+
+		<menuitem id="resource_root" name="Resource" web_icon="l10n_co_resource,static/description/icon.png" sequence="7"/>
+
+		<menuitem id="resource_conf" name="Configuration" parent="resource_root"/>
+
+		<menuitem id="resource_nodo" name="Nodo" parent="resource_conf" action="action_resource_nodo" sequence="5" />
+
+		<menuitem id="resource_antenna" name="Antenna" parent="resource_conf" action="action_resource_antenna" sequence="7" />
+
+	</data>
+	
+</odoo>

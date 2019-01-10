@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<odoo>
+	<data noupdate="1">
+<!--
+		<record model="ir.cron" id="resource_update_data_antena">
+			<field name="name">Update data antena</field>
+			<field name="interval_number">1</field>
+			<field name="user_id" ref="base.user_root"/>
+			<field name="interval_type">days</field>
+			<field name="numbercall">-1</field>
+			<field name="nextcall" eval="(DateTime.now() + timedelta(hours=6)).strftime('%Y-%m-%d 00:30:00')" />
+			<field name="model_id">resource.antenna</field>
+			<field name="function" eval="'update_data_antena'"/>
+			<field name="args" eval="'()'"/>
+		</record>
+-->
+	<record id="resource_update_data_antena" model="ir.cron">
+        <field name="name">Update data antena</field>
+        <field name="model_id" ref="model_resource_antenna"/>
+        <field name="state">code</field>
+        <field name="code">model.update_data_antena()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False"/>
+    </record>
+
+
+	</data>
+</odoo>

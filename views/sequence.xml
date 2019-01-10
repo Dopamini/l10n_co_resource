@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+
+		<!-- Sequences for source.nodo -->
+		<record id="seq_resource_nodo" model="ir.sequence">
+			<field name="name">Nodo</field>
+			<field name="code">resource.nodo</field>
+			<field name="prefix">NOD-</field>
+			<field name="padding">6</field>
+            <field name="active">TRUE</field>
+            <field eval="1" name="number_increment"/>
+            <field name="implementation">standard</field>
+		</record>
+
+		<!-- Sequences for source.antenna -->
+		<record id="seq_resource_antenna" model="ir.sequence">
+			<field name="name">Antenna</field>
+			<field name="code">resource.antenna</field>
+			<field name="prefix">ANT-</field>
+			<field name="padding">6</field>
+            <field name="active">TRUE</field>
+            <field eval="1" name="number_increment"/>
+            <field name="implementation">standard</field>
+		</record>
+
+	</data>
+</odoo>

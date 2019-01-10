@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	
+	<record id="resource_antenna_form" model="ir.ui.view">
+		<field name="name">resource.antenna.form</field>
+		<field name="model">resource.antenna</field>
+		<field name="arch" type="xml">
+			<form>
+
+				<group col='4'>
+					<field name="number_antenna"/>
+					<field name="name"/>
+				</group>
+
+				<group col='4'>
+					<field name="serial_number"/>
+					<field name="nodo_ids"/>
+				</group>
+
+				<group col='4'>
+					<field name="sale_date" />
+					<field name="instalation_date"/>
+				</group>
+
+				<group col='4'>
+					<field name="state" />
+					<field name="amortization"/>
+				</group>
+
+				<group col='3'>
+					<group col='2'>
+						<field name="days_of_use" />
+					</group>
+				</group>
+
+				<group col='3'>
+					<group col='2'>
+						<field name="partner_id" style="width:100%%" />
+					</group>
+				</group>
+
+				<notebook>
+					<page string="Description">
+						<field name="description" placeholder="Notas"/>
+					</page>
+				</notebook>
+
+			</form>
+		</field>
+	</record>
+
+	<record id="resource_antenna_tree" model="ir.ui.view">
+		<field name="name">resource.antenna.tree</field>
+		<field name="model">resource.antenna</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="number_antenna"/>
+				<field name="name"/>
+				<field name="serial_number"/>
+				<field name="nodo_ids"/>
+				<field name="sale_date" />
+				<field name="instalation_date"/>
+				<field name="state" />
+				<field name="amortization"/>
+				<field name="days_of_use" />
+				<field name="partner_id" />
+				<field name="description" invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="action_resource_antenna" model="ir.actions.act_window">
+		<field name="name"> Antenna</field>
+		<field name="res_model">resource.antenna</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_type">form</field>
+		<field name="help" type="html">
+			<p class="oe_view_nocontent_create">
+				Create a antenna, the first step of a new antenna.
+			</p>
+		</field>
+	</record>
+
+
+</odoo>
