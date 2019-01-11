@@ -37,7 +37,7 @@
     'author' : 'Brayhan Jaramillo',
     'website' : 'brayhanjaramillo@hotmail.com',
     'images': ['static/description/banner.jpg'],
-    'depends' : [],
+    'depends' : ['hr'],
     'data': [
         'views/resource_nodo_view.xml',
         'views/resource_antenna_view.xml',
