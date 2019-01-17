@@ -49,7 +49,7 @@
 						</div>
 						<div>
 							<field name="use_nodo"/>
-							<label for="use_nodo" string="Used by Nodo"/>
+							<label for="use_nodo" string="Usado por Nodo"/>
 						</div>
 					</div>
 				</xpath>
