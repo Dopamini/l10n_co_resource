@@ -33,6 +33,6 @@ class ProductTemplateInherit(models.Model):
 
 	_inherit = "product.template"
 
-	use_nodo = fields.Boolean(string='Used by Nodo')
+	use_nodo = fields.Boolean('Usado por Nodo')
 
 ProductTemplateInherit()

@@ -40,9 +40,9 @@ class ResourceAntenna(models.Model):
 	product_id = fields.Many2one('product.product', string='Product', domain=[('use_nodo', '=', True)], change_default=True, ondelete='restrict', required=True)
 	sale_date = fields.Date('Purchase Date')
 	instalation_date = fields.Date(string='Instalation Date')
-	state= fields.Selection([('in_service','In Service'), 
-							('out_service','Out of Service'), 
-							('in_maintenance','In Maintenance')], 
+	state= fields.Selection([('in_service','En Servicio'), 
+							('out_service','Fuera de Servicio'), 
+							('in_maintenance','En Mantenimiento')], 
 		string="State", default='out_service')
 	amortization = fields.Integer(string='Amortization')
 	days_of_use = fields.Integer(string='Days of Use')
