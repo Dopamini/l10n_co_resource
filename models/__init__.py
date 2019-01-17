@@ -25,3 +25,4 @@
 
 from . import resource_nodo
 from . import resource_antenna
+from . import product_template_inherit

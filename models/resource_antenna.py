@@ -33,11 +33,12 @@ class ResourceAntenna(models.Model):
 
 	_name = "resource.antenna"
 
-	name = fields.Char(string='Name Antenna', required=True)
+
 	number_antenna = fields.Char('Number Antenna', readonly=True)
-	serial_number = fields.Integer(string='Serial Number')
+	serial_number = fields.Char(string='Serial Number')
 	nodo_ids = fields.Many2one('resource.nodo', 'Nodo')
-	sale_date = fields.Date('Sale Date')
+	product_id = fields.Many2one('product.product', string='Product', domain=[('use_nodo', '=', True)], change_default=True, ondelete='restrict', required=True)
+	sale_date = fields.Date('Purchase Date')
 	instalation_date = fields.Date(string='Instalation Date')
 	state= fields.Selection([('in_service','In Service'), 
 							('out_service','Out of Service'), 

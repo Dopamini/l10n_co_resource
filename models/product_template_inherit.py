@@ -29,24 +29,10 @@ import logging
 _logger = logging.getLogger(__name__)
 
 
-class ResourceNodo(models.Model):
+class ProductTemplateInherit(models.Model):
 
-	_name = "resource.nodo"
+	_inherit = "product.template"
 
-	name = fields.Char(string='Name Nodo', required=True)
-	number_nodo = fields.Char('Number Nodo', readonly=True)
-	serial_number = fields.Char(string='Serial Number')
-	employee_id = fields.Many2one('hr.employee', string='Asigned to')
-	instalation_date = fields.Date('Instalation Date')
-	description= fields.Text(string='Description')
-	antenna_ids = fields.Many2many('resource.antenna', 'resource_antenna_nodo_rel', 'nodo_id', 'antenna_id', string='Antennas')
-    
-	@api.model
-	def create(self, vals):
-		sequence_id= self.env['ir.sequence'].next_by_code('resource.nodo')
-		_logger.info(sequence_id)
-		vals['number_nodo'] = sequence_id
-		res = super(ResourceNodo, self).create(vals)
-		return res
-		
-ResourceNodo()
+	use_nodo = fields.Boolean(string='Used by Nodo')
+
+ProductTemplateInherit()

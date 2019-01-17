@@ -33,8 +33,8 @@ msgstr "Número de Serie"
 
 #. module: l10n_co_resource
 #: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_employee_id
-msgid "Installed to"
-msgstr "Instalado a"
+msgid "Asigned to"
+msgstr "Asignado a"
 
 #. module: l10n_co_resource
 #: model:ir.model.fields,field_description:l10n_co_resource.field_resource_nodo_instalation_date
@@ -73,8 +73,8 @@ msgstr "Nodo"
 
 #. module: l10n_co_resource
 #: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_sale_date
-msgid "Sale Date"
-msgstr "Fecha Venta"
+msgid "Purchase Date"
+msgstr "Fecha de Compra"
 
 #. module: l10n_co_resource
 #: selection:resource.antenna,state:0
@@ -110,3 +110,9 @@ msgstr "Asignado a"
 #: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_description
 msgid "Description"
 msgstr "Descripción"
+
+
+#. module: l10n_co_resource
+#: model:ir.model.fields,field_description:l10n_co_resource.field_resource_antenna_product_id
+msgid "Product"
+msgstr "Producto"

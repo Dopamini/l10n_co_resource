@@ -34,8 +34,8 @@
 
     """,
     'category': '',
-    'author' : 'Brayhan Jaramillo',
-    'website' : 'brayhanjaramillo@hotmail.com',
+    'author' : 'Brayhan Jaramillo (brayhanjaramillo@hotmail.com)',
+    'website' :  'yo@alfredobravocuero.co',
     'images': ['static/description/banner.jpg'],
     'depends' : ['hr'],
     'data': [
@@ -43,7 +43,8 @@
         'views/resource_antenna_view.xml',
         'views/menu.xml',
         'views/sequence.xml',
-        'views/schedule.xml'
+        'views/schedule.xml',
+        'views/product_template_inherit_view.xml'
     ],
     'demo': [
     ],
